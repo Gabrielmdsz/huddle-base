@@ -1,4 +1,9 @@
 @media (max-width: 425px){
+    body{
+        background: url(../images/bg-mobile.svg) center center no-repeat;
+    background-size: cover;
+    }
+
     .hero{
         display: flex;
         flex-direction: column;
@@ -24,6 +29,7 @@
     .hero .infos h2{
         text-align: center;
         margin: auto;
+        font-size: 30px;
     }
     .hero .infos p{
         text-align: center;
@@ -32,15 +38,21 @@
     }
     .hero .infos .btn{
         margin: auto;
+        padding: 10px 80px;
     }
 
-    .footer{
+    .footer .icons ul{
        justify-content: center;
        margin: 20px auto;
     }
 }
 
 @media (max-width: 376px){
+    body{
+        background: url(../images/bg-mobile.svg) center center no-repeat;
+    background-size: cover;
+    }
+
     .hero .infos h2{
         width: 100%;
         font-size: 26px;
@@ -51,29 +63,60 @@
     }
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
     .hero{
         flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .hero .infos{
+        margin-top: 0;
     }
     .hero .infos h2{
         width: 100%;
-        font-size: 26px;
+        font-size: 30px;
     }
-
-    .footer{
-        padding: 80px 0;
+    .footer .icons ul{
+        margin-top: 50px;
     }
 }
 
-@media (min-width: 1023px){
+@media (min-width: 1024px){
     .hero{
         flex-direction: row;
+        padding-right: 0;
+    }
+
+    .hero img{
+        width: 100%;
+    }
+    .hero .infos{
+        margin-right: 0;
+        margin-top: 26px;
+    }
+    .footer .icons ul{
+        margin-right: 40px;
+    }
+}
+
+@media (min-width: 1440px){
+    .hero{
+        flex-direction: row;
+    }
+    .hero .infos{
+        margin: 40px 30px;
+    }
+    .hero .infos h2{
+        font-size: 30px;
     }
 
     .hero img{
         width: 100%
     }
-    .footer{
-        padding: 20px 0;
+    .hero .infos .btn{
+        align-items: left;
+    }
+    .footer .icons ul{
+        margin-right: 80px;
     }
 }
